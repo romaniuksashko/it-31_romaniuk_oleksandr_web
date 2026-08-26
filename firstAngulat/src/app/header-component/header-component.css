@@ -1,0 +1,33 @@
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(3, 191, 3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__title {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.header__item {
+  list-style: none;
+}
+.header__link {
+  color: bisque;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+.header__link:hover {
+  color: rgb(189, 169, 145);
+}/*# sourceMappingURL=header-component.css.map */

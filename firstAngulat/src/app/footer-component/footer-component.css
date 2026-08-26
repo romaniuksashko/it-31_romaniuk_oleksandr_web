@@ -1,0 +1,13 @@
+.footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(1, 92, 152);
+}
+.footer__text {
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 50;
+  line-height: 1.25;
+  text-align: center;
+}/*# sourceMappingURL=footer-component.css.map */
