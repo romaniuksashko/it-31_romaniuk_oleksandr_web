@@ -1,0 +1,17 @@
+<h1>Movies</h1>
+
+<ul *ngFor="let movie of getMovies()()">
+  <h3>{{movie.title}}</h3>
+  <p>Year: {{movie.year}}</p>
+  <p>Rating: {{movie.rating}}</p>
+  <button type="button" (click)="deleteMovies(movie.id)">Delete</button>
+</ul>
+
+<h2>Add movie form</h2>
+
+<form>
+  <input type="text" placeholder="title" [(ngModel)]="title" name="title">
+  <input type="number" placeholder="year" [(ngModel)]="year" name="year" min="0">
+  <input type="number" placeholder="rating" [(ngModel)]="rating" name="rating" min="0" max="10">
+  <button type="button" (click)="addMovie()">Add movie</button>
+</form>
