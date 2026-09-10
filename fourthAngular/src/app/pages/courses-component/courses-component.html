@@ -1,0 +1,9 @@
+<h2>Наші курси</h2>
+
+<ul>
+  <li *ngFor="let course of returnCourse()">
+    <h3>{{course.title}}</h3>
+    <p>Викладач: {{course.teacher}}</p>
+    <a [routerLink]="['/course', course.id]">Переглянути курс</a>
+  </li>
+</ul>

@@ -1,0 +1,9 @@
+<div *ngIf="course">
+  <h2>{{course.title}}</h2>
+  <p>Викладач: {{course.teacher}}</p>
+  <p>Тривалість: {{course.duration}} годин</p>
+</div>
+
+<div *ngIf="!course">
+  <p>Курс не знайдено</p>
+</div>
