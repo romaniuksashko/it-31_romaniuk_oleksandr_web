@@ -1,0 +1,29 @@
+form {
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;  
+}
+
+input {
+  width: 350px;
+  padding: 5px;
+  border-radius: 20px;
+  border: none;
+
+}
+
+textarea {
+  width: 350px;
+  padding: 5px;
+  border-radius: 20px;
+  border: none;
+}
+
+small {
+  color: white;
+}
