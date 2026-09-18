@@ -1,0 +1,24 @@
+<form #bookForm="ngForm" (ngSubmit)="addBook(bookForm)">
+  <input type="text" name="title" placeholder="Enter book title" required minlength="2" maxlength="50" #titleRef="ngModel" [(ngModel)]="newBook.title">
+
+  <div *ngIf="submitted && titleRef.invalid">
+    <small *ngIf="titleRef.errors?.['required']">Обов'язково впишіть назву книги</small>
+    <small *ngIf="titleRef.errors?.['minlength']">Назву книги має бути більшою ніж 2 символи</small>
+  </div>
+
+  <input type="text" name="author" placeholder="Enter book author" required minlength="3" maxlength="50" #authorRef="ngModel" [(ngModel)]="newBook.author">
+
+  <div *ngIf="submitted && authorRef.invalid">
+    <small *ngIf="authorRef.errors?.['required']">Обов'язково впишіть автора книги або "Невідомо"</small>
+    <small *ngIf="authorRef.errors?.['minlength']">Ім'я автора має бути довшим за 3 символи</small>
+  </div>
+
+  <input type="text" name="description" placeholder="Enter book description" required minlength="10" #descriptionRef="ngModel" [(ngModel)]="newBook.description">
+
+  <div *ngIf="submitted && descriptionRef.invalid">
+    <small *ngIf="descriptionRef.errors?.['required']">Обов'язково впишіть опис</small>
+    <small *ngIf="descriptionRef.errors?.['minlength']">Опис має бути довшим за 10 символів</small>
+  </div>
+
+  <button type="submit">Додати книжку</button>
+</form>

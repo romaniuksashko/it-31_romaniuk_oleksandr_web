@@ -1,0 +1,9 @@
+<div *ngIf="bookDetails">
+  <h2>{{bookDetails.title}}</h2>
+  <p>{{bookDetails.author}}</p>
+  <p>{{bookDetails.description}}</p>  
+</div>
+
+<div *ngIf="!bookDetails">
+  <b>Книжку не знайдено</b>
+</div>
