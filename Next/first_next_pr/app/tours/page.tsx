@@ -56,7 +56,7 @@ export default function Tour() {
           </button>
         </li>
         <li className="w-[250px] flex flex-col items-center bg-orange-600 text-white p-[10px] rounded-[10px] gap-[5px]">
-          <h3 className="font-bold text-[16px]" text-center>
+          <h3 className="font-bold text-[16px] text-center">
             Карпати
           </h3>
           <p className="text-center">
